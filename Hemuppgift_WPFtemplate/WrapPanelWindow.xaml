@@ -1,0 +1,24 @@
+﻿<Window x:Class="Hemuppgift_WPF.WrapPanelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WrapPanel Window" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <RadioButton x:Name="VerticalRadioButton" Content="Vertical" IsChecked="True" Checked="RadioButton_Checked" Margin="5"/>
+            <RadioButton x:Name="HorizontalRadioButton" Content="Horizontal" Checked="RadioButton_Checked" Margin="5"/>
+        </StackPanel>
+
+        <ScrollViewer Height="300">
+            <WrapPanel x:Name="MainWrapPanel" Margin="10" Orientation="Vertical">
+                <Ellipse Fill="Red" Width="100" Height="100" Margin="5"/>
+                <Ellipse Fill="Orange" Width="90" Height="90" Margin="5"/>
+                <Ellipse Fill="Yellow" Width="80" Height="80" Margin="5"/>
+                <Ellipse Fill="LightGreen" Width="70" Height="70" Margin="5"/>
+                <Ellipse Fill="Green" Width="60" Height="60" Margin="5"/>
+                <Ellipse Fill="LightBlue" Width="50" Height="50" Margin="5"/>
+                <Ellipse Fill="Blue" Width="40" Height="40" Margin="5"/>
+                <Ellipse Fill="Black" Width="30" Height="30" Margin="5"/>
+            </WrapPanel>
+        </ScrollViewer>
+    </StackPanel>
+</Window>
